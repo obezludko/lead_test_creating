@@ -27,15 +27,6 @@ def set_click_param():
     return click
 
 
-# print(set_click_param())
-
-
-# def string_from_link(self):
-#     self.converted_link_value = str(converted_link_value)
-#     return print(str(converted_link_value))
-
-# print(r.status_code)
-# print(r.text)
 
 
 
