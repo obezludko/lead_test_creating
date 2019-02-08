@@ -31,7 +31,4 @@ def generate_sub5():
     sub5 = random_str
     return sub5
 
-# print(generate_sub1(),generate_sub2(),generate_sub3(),generate_sub4(),generate_sub5())
-
-
 
