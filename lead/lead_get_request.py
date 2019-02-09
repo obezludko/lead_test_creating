@@ -13,4 +13,3 @@ lead_params = {
          }
 
 requests.get(link,lead_params)
-
