@@ -11,7 +11,6 @@ subs = {'sub1':generate_sub1(),
         }
 link = 'http://lawn.mobstra.com/go?id=591&hash=FG4crGUwMN'
 
-
 r = requests.get(link,subs)
 
 def get_responce_url():
