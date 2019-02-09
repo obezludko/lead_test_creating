@@ -1,4 +1,4 @@
-from subs_generator import *
+from click_sub.subs_generator import *
 import requests
 from urllib.parse import urlparse
 
