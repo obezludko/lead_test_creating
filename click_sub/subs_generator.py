@@ -1,5 +1,9 @@
 import random
 
+"""This script generate pseudo random subs,
+   that will be used in click get request
+"""
+
 
 def generate_sub1():
     random_int = random.randint(1, 9999999)
