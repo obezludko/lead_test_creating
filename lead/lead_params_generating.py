@@ -36,6 +36,6 @@ def lead_extra_param():
     extra_param = 'extra ' + str(random.randint(1,10)) + ' param'
     return extra_param
 
-print(lead_extra_param())
+
 
 
