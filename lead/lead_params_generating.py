@@ -1,9 +1,8 @@
 import random
 from click_sub.click import set_click_param
 
+class LeadQueryParams():
 
-
-class lead_query_params():
     def generate_partner():
         partner_list = ['nouniqlead', 'test', 'test_reliz_shark',
                         'wapclick', 'u', 'testignore', 'leadtestignore',
@@ -38,5 +37,6 @@ class lead_query_params():
     def get_lead_extra_param():
         extra_param = 'extra ' + str(random.randint(1, 10)) + ' param'
         return extra_param
+
 
 

@@ -24,15 +24,3 @@ def apend_click_from_link():
 def set_click_param():
     click = apend_click_from_link()
     return click
-
-
-
-
-
-
-
-
-
-
-
-
