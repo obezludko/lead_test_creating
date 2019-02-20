@@ -1,17 +1,18 @@
 import psycopg2
+from DB import connection
 
-connection = psycopg2.connect(user="appuser",
-                              password="Hdz1jl",
-                              host="159.69.18.119",
-                              port="6432",
-                              database="mobstra")
+connection = psycopg2.connect(user = connection.user,
+                              password = connection.password,
+                              host = connection.host,
+                              port = connection.port,
+                              database = connection.database)
 
 cursor = connection.cursor()
 print(connection.get_dsn_parameters(), "\n")
 
 cursor.execute("SELECT version();")
-record = cursor.fetchone()
-print("You are connected to - ", record, "\n")
+version = cursor.fetchone()
+print("You are connected to - ", version, "\n")
 
 gateway_aliases_query = '''select * FROM gateway_aliases WHERE id between 32 and 35;'''
 cursor.execute(gateway_aliases_query)
