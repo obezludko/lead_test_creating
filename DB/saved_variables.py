@@ -1,4 +1,3 @@
-import from click_sub
 from lead import lead_params_generating
 
 ''' 
