@@ -36,8 +36,7 @@ connection = psycopg2.connect(user = connection.user,
 
 def select_lead():
     cursor = connection.cursor()
-    click_id = '47946094'
-    # click_id = DB.saved_variables.click_id
+    click_id = DB.saved_variables.click_id
     lead_select_query = 'select * FROM lead WHERE click_id = %s;'%click_id
     cursor.execute(lead_select_query)
     lead_row = cursor.fetchall()
