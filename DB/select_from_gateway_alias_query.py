@@ -40,3 +40,4 @@ alias = first_row_response[1]
 def select_from(self,column = '*',table):
     self.table = table
     self.column = column
+################################################# ///////ДОПИСАТЬ!!!!
