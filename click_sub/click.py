@@ -3,13 +3,13 @@ import requests
 from urllib.parse import urlparse
 
 
-subs = {'sub1':generate_sub1(),
-        'sub2':generate_sub2(),
-        'sub3':generate_sub3(),
-        'sub4':generate_sub4(),
-        'sub5':generate_sub5()
+subs = {'sub1':generate_sub('sub1'),
+        'sub2':generate_sub('sub2'),
+        'sub3':generate_sub('sub3'),
+        'sub4':generate_sub('sub4'),
+        'sub5':generate_sub('sub5')
         }
-link = 'http://lawn.mobstra.com/go?id=591&hash=FG4crGUwMN'
+link = 'http://159.69.18.119/go?id=617&hash=rt7tGuCXMA'
 
 """ Send request using link variable ang generated in subs_generator subs
 """

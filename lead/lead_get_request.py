@@ -1,7 +1,7 @@
 import requests
 from lead.lead_params_generating import LeadQueryParams
 
-link = 'http://lawn.mobstra.com'
+link = 'http://159.69.18.119/lead?'
 lead_params = {
     'payout':LeadQueryParams.get_lead_payout(),
     'extra_param':LeadQueryParams.get_lead_extra_param(),
