@@ -102,3 +102,4 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+/variables/select_from_gateway_alias_query.py
