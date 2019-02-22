@@ -42,5 +42,3 @@ class LeadQueryParams():
         extra_param = 'extra ' + str(random.randint(1, 10)) + ' param'
         return extra_param
 
-
-
