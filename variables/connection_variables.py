@@ -1,4 +1,4 @@
-### Postgres variables settings
+### DEV_Postgres variables settings
 
 user="appuser"
 password="Hdz1jl"
