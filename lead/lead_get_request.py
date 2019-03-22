@@ -15,11 +15,3 @@ def create_lead():
     }
     return requests.get(link, lead_params)
 
-# print('payout:' + variables.saved_variables.payout,
-#     '\nextra_param:' + variables.saved_variables.extra_param,
-#     '\nclick_id:' + variables.saved_variables.click_id,
-#     '\npartner:' + variables.saved_variables.partner,
-#     '\ncurrency:' + variables.saved_variables.currency,
-#     '\nexternal_message_id:' + variables.saved_variables.external_message_id,
-#     '\nexternal_subscription_id:' + variables.saved_variables.external_subscription_id
-#       )
