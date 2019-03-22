@@ -60,4 +60,4 @@ else:
     print("Start money_from_gateway validation:\n",
           lead_money_from_gateway(), '!=', validate_money_from_gateway(), " - FAILED")
 
-# print(validate_money_from_gateway())
+
