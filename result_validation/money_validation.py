@@ -48,15 +48,16 @@ def lead_money_from_gateway():
 
 
 def validate_money_from_gateway():
-    validate_money_from_gateway = currency_rate() *\
+    validate_money_from_gateway = currency_rate() * \
                                   float(saved_variables.payout)
     return validate_money_from_gateway
 
+
 if lead_money_from_gateway() == validate_money_from_gateway():
     print("Start money_from_gateway validation:\n",
-              lead_money_from_gateway(), '=', validate_money_from_gateway())
-else:print("Start money_from_gateway validation:\n",
-              lead_money_from_gateway(), '!=', validate_money_from_gateway())
-
+          lead_money_from_gateway(), '=', validate_money_from_gateway())
+else:
+    print("Start money_from_gateway validation:\n",
+          lead_money_from_gateway(), '!=', validate_money_from_gateway())
 
 # print(validate_money_from_gateway())
