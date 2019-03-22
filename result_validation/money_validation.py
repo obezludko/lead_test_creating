@@ -16,7 +16,21 @@ def select_currency_options():
                             "FROM currency " \
                             "WHERE code = '%s'" %currency
     cursor.execute(currency_select_query)
-    currency_row = cursor.fetchall()
+    currency_cortage = cursor.fetchall()
+    currency_row = currency_cortage[0]
     return currency_row
 
-print(select_currency_options())
+
+currency_parameters = select_currency_options()
+
+
+def currency_code():
+    currency_code = currency_parameters[2]
+    return currency_code
+
+if currency_code() == saved_variables.currency:
+    print("Start currency_code validation:\n",
+              currency_code(), '=', saved_variables.currency)
+else:
+    print("Start currency_code validation:\n",
+          currency_code(), '!=', saved_variables.currency)

@@ -21,26 +21,26 @@ def select_lead():
                         'FROM lead ' \
                         'WHERE click_id = %s;'% click_id
     cursor.execute(lead_select_query)
-    lead_row = cursor.fetchall()
+    lead_cortage = cursor.fetchall()
+    lead_row = lead_cortage[0]
     return lead_row
 
 
 lead_parameters = select_lead()
-lead_cortege = lead_parameters[0]
 
 
 def lead_click_id():
-    lead_click_id = lead_cortege[6]
+    lead_click_id = lead_parameters[6]
     return str(lead_click_id)
 
 
 def lead_external_message_id():
-    lead_external_message_id = lead_cortege[10]
+    lead_external_message_id = lead_parameters[10]
     return str(lead_external_message_id)
 
 
 def lead_extra_param():
-    lead_extra_param = lead_cortege[16]
+    lead_extra_param = lead_parameters[16]
     return lead_extra_param
 
 
