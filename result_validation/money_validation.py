@@ -31,7 +31,7 @@ def currency_code():
 
 if currency_code() == saved_variables.currency:
     print("Start currency_code validation:\n",
-          currency_code(), '=', saved_variables.currency)
+          currency_code(), '=', saved_variables.currency, " - PASSED")
 else:
     print("Start currency_code validation:\n",
           currency_code(), '!=', saved_variables.currency)
@@ -55,9 +55,9 @@ def validate_money_from_gateway():
 
 if lead_money_from_gateway() == validate_money_from_gateway():
     print("Start money_from_gateway validation:\n",
-          lead_money_from_gateway(), '=', validate_money_from_gateway())
+          round(lead_money_from_gateway(), 2), '=', validate_money_from_gateway(), " - PASSED")
 else:
     print("Start money_from_gateway validation:\n",
-          lead_money_from_gateway(), '!=', validate_money_from_gateway())
+          lead_money_from_gateway(), '!=', validate_money_from_gateway(), " - FAILED")
 
 # print(validate_money_from_gateway())
