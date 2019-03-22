@@ -13,4 +13,3 @@ external_subscription_id = lead_params_generating.LeadQueryParams.get_lead_exter
 currency = lead_params_generating.LeadQueryParams.get_lead_currency()
 payout = lead_params_generating.LeadQueryParams.get_lead_payout()
 extra_param = lead_params_generating.LeadQueryParams.get_lead_extra_param()
-
