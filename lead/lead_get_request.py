@@ -1,6 +1,7 @@
 import requests
 import variables.saved_variables
 
+
 def create_lead():
     link = 'http://159.69.18.119/lead?'
     lead_params = {
@@ -12,14 +13,5 @@ def create_lead():
         'external_message_id': variables.saved_variables.external_message_id,
         'external_subscription_id': variables.saved_variables.external_subscription_id
     }
-    return requests.get(link,lead_params)
+    return requests.get(link, lead_params)
 
-
-# print('payout:' + variables.saved_variables.payout,
-#     '\nextra_param:' + variables.saved_variables.extra_param,
-#     '\nclick_id:' + variables.saved_variables.click_id,
-#     '\npartner:' + variables.saved_variables.partner,
-#     '\ncurrency:' + variables.saved_variables.currency,
-#     '\nexternal_message_id:' + variables.saved_variables.external_message_id,
-#     '\nexternal_subscription_id:' + variables.saved_variables.external_subscription_id
-#       )
