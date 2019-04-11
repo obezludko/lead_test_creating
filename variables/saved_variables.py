@@ -3,7 +3,7 @@ from lead import lead_params_generating
 ''' 
 Saved params for:
  1) lead generating
- 2) using in select queries from database
+ 2) using for select queries from database
 '''
 
 partner = lead_params_generating.LeadQueryParams.generate_partner()
